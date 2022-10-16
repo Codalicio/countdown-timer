@@ -1,4 +1,9 @@
-const endDate = "14 October 2022 01:31 P M";
+const endDate = "18 October 2022 07:20 PM";
+// const startDate = new Date();
+
+// const submitHandler = () => {   
+//     console.log(startDate);
+// }
 
 document.getElementById("end-date").innerHTML = endDate;
 
@@ -17,7 +22,7 @@ const clock = () => {
     inputs[0].value = Math.floor(diff/ 3600/ 24);
 
     // conversion into hours:
-    inputs[1].value = (Math.floor(diff/ 3600 % 24));
+    inputs[1].value = Math.floor(diff/ 3600 % 24);
 
     // conversion into minutes:
     inputs[2].value = Math.floor(diff / 60) % 60;
